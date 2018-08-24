@@ -1,6 +1,6 @@
 {
   "name": "web-project-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A commandline tool to create simple project structure for html project",
   "main": "index.js",
   "scripts": {
