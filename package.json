@@ -1,0 +1,25 @@
+{
+  "name": "web-project-cli",
+  "version": "0.0.1",
+  "description": "A commandline tool to create simple project structure for html project",
+  "main": "index.js",
+  "scripts": {
+    "release:patch": "npm version patch -m 'upgraded to %s' && git push && git push --tags",
+    "release:minor": "npm version minor -m 'upgraded to %s' && git push && git push --tags",
+    "release:major": "npm version major -m 'upgraded to %s' && git push && git push --tags"
+  },
+  "bin": {
+    "web-project-cli": "./index.js"
+  },
+  "author": "dharmendra",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "commander": "^2.17.1",
+    "shelljs": "^0.8.2"
+  },
+  "keywords": [
+    "cli",
+    "static-web"
+  ]
+}
