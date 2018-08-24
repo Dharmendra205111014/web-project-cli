@@ -1,6 +1,6 @@
 ## web-project-cli
 
-This is a cli command to create a simple skeleton of static web project. it generate below structure
+This is a cli to create a simple skeleton of static web project. it generate below structure
 
 ```
 project_name
