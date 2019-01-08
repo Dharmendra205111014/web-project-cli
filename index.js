@@ -1,12 +1,13 @@
 #!/usr/bin/env node
 
+var options = require('./package.json');
 var shell = require('shelljs');
 var chalk = require('chalk');
 var program = require('commander');
 const templates = require('./template/templates').default;
 
 program
-   .version('0.0.1')
+   .version(options.version)
    .option('-n, --name <name>', 'Give new project name', 'demo')
    .option('-a, --author <author>', 'Author name', "")
    .parse(process.argv);
@@ -21,7 +22,7 @@ if (program.name !== "undefined") {
 
     // create package.json file
     var app = {
-        name: program.name,
+        name: program.name.toLowerCase(),
         author: program.author
     }
 
